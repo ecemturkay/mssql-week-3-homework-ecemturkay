@@ -1,1 +1,1 @@
-select * from tblUrun
+select * from tblUrun2
