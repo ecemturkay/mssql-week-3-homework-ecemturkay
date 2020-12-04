@@ -1,1 +1,2 @@
-select * from tblUrun2
+select * from tblUrun
+select * from tblKullanici
