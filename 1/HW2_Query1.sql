@@ -1,3 +1,4 @@
 --1
-select urunKod, urunAd, listeFiyat from tblUrun 
-order by listeFiyat;
+select urunKod, urunAd, (listeFiyat + listeFiyat * KDVoran) as KDVdahilFiyat from tblUrun
+where (listeFiyat + listeFiyat * KDVoran) > 0
+order by KDVdahilFiyat;
